@@ -1,0 +1,143 @@
+body {
+    background-color: azure;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.navbar {
+    width: 100vw;
+    height: 50px;
+    text-align: center;
+    top: 0;
+    left: 0;
+    max-height: 100px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 10px;
+    border-color: black;
+    position: fixed;
+    z-index: 10;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.btn-navbar {
+    text-decoration: none;
+    font-family: Calibri;
+    font-size: 24px;
+    border: 15px;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    color: orange;
+    cursor: pointer;
+    border-color: black;
+    border-width: 3px;
+}
+
+.photo_1 {
+    position:absolute;
+    display: inline-block;
+    top: 17vh;
+    left: 5vw;
+    width: 25vw;
+    height: 50vh;
+    z-index: 1;
+}
+
+.photo_2 {
+    position: absolute;
+    display: inline-block;
+    top: 17vh;
+    left: 35vw;
+    width: 25vw;
+    height: 50vh;
+    z-index: 2;
+    border: 1px solid black;
+}
+
+.photo_3 {
+    position: absolute;
+    display: inline-block;
+    top: 17vh;
+    left: 65vw;
+    width: 30vw;
+    height: 50vh;
+    z-index: 3;
+    border: 1px solid black;
+}
+
+.photo_4 {
+    position:absolute;
+    display: inline-block;
+    top: 80vh;
+    left: 5vw;
+    width: 36vw;
+    height: 50vh;
+    z-index: 1;
+}
+
+.photo_5 {
+    position:absolute;
+    display: inline-block;
+    top: 80vh;
+    left: 47vw;
+    width: 22vw;
+    height: 50vh;
+    z-index: 1;
+}
+
+.photo_6 {
+    position:absolute;
+    display: inline-block;
+    top: 80vh;
+    left: 75vw;
+    width: 22vw;
+    height: 50vh;
+    z-index: 1;
+}
+
+.photo_7 {
+    position:absolute;
+    display: inline-block;
+    top: 150vh;
+    left: 5vw;
+    width: 22vw;
+    height: 35vh;
+    z-index: 1;
+}
+
+.photo_8 {
+    position:absolute;
+    display: inline-block;
+    top: 150vh;
+    left: 45vw;
+    width: 22vw;
+    height: 35vh;
+    z-index: 1;
+}
+
+.photo_9 {
+    position:absolute;
+    display: inline-block;
+    top: 150vh;
+    left: 75vw;
+    width: 22vw;
+    height: 35vh;
+    z-index: 1;
+}
+
+.photo_bas {
+    position:absolute;
+    display: inline-block;
+    top: 200vh;
+    left: 5vw;
+    width: 90vw;
+    height: 45vh;
+    z-index: 1;
+}
