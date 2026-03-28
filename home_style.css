@@ -51,49 +51,102 @@ body {
 }
 
 .videos {
-    display: grid;
+    display: flex;
     width: 200px;
     height: 200px;
-    background-color: palevioletred;
     padding: 5px;
+    cursor: pointer;
+    background-image: url("photos_freelance/JOYEUX\ NOEL!!!!.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
 }
 
 .logos {
-    display: grid;
+    display: flex;
     width: 200px;
     height: 200px;
     background-color: palevioletred;
     padding: 5px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    background-image: url("photos_freelance/JOYEUX\ NOEL!!!!.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .soundtracks {
-    display: grid;
+    display: flex;
     width: 200px;
     height: 200px;
     background-color: palevioletred;
     padding: 5px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    background-image: url("photos_freelance/JOYEUX\ NOEL!!!!.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .montages {
-    display: grid;
+    display: flex;
     width: 200px;
     height: 200px;
     background-color: palevioletred;
     padding: 5px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    background-image: url("photos_freelance/JOYEUX\ NOEL!!!!.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.montages .text, .soundtracks .text {
+    font-size: 25px;
 }
 
 .website {
-    display: grid;
+    display: flex;
     width: 200px;
     height: 200px;
     background-color: palevioletred;
     padding: 5px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    background-image: url("photos_freelance/JOYEUX\ NOEL!!!!.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .games {
-    display: grid;
+    display: flex;
     width: 200px;
     height: 200px;
     background-color: palevioletred;
     padding: 5px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    background-image: url("photos_freelance/JOYEUX\ NOEL!!!!.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
