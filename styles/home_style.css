@@ -1,11 +1,14 @@
 body {
-    background-color: azure;
+    background-color: orangered;
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100%;
-    overflow-x: hidden;
+    min-height: 100vh;
+    max-width: 100%;
+    overflow-x:hidden;
     overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
 }
 
 a {
@@ -27,7 +30,7 @@ a {
     border-color: black;
     position: fixed;
     z-index: 10;
-    display: flex; 
+    display: inline-flex; 
     justify-content: center; 
     align-items: center;
 }
@@ -35,6 +38,7 @@ a {
 .btn-navbar {
     text-decoration: none;
     font-family: Calibri;
+    font-weight: 600;
     font-size: 24px;
     border: 15px;
     border-radius: 10px;
@@ -43,30 +47,75 @@ a {
     color: orange;
     cursor: pointer;
     border-color: black;
+    background-color: transparent;
     border-width: 3px;
 }
 
 .foreground {
-    margin-top: 60px;
-    min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 2.5rem;
+    gap: 2rem;
     place-items: center;
+    padding: 12rem 2rem 2rem;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
-.videos {
+@media (min-width: 435px) and (max-width: 558px) {
+    .foreground {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        padding: 7rem 2rem 2rem;
+        width: 100%;
+        height: 100%;
+        gap: 1rem;
+    }
+
+    .videos, .soundtracks, .art, .website, .games, .montages {
+        margin-bottom: 3rem;
+    }
+
+}
+
+
+@media (min-width: 267px) and (max-width:435px) {
+    .foreground {
+        display: grid;
+        grid-template-columns: 1fr; 
+        padding: 7rem 1rem 1rem;
+        width: 100%;
+        height: 100%;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 267px) {
+    .foreground {
+        display: grid;
+        grid-template-columns: 1fr; 
+        width: 100%;
+        height: 100%;
+        gap: 1rem;
+        padding: 5rem  0px 1rem 0px;
+    }
+}
+
+.videos, .soundtracks, .art, .website, .games, .montages {
     display: flex;
-    width: 200px;
-    height: 200px;
+    width:100%;
+    max-width:none;
+    height:auto;
     padding: 5px;
     cursor: pointer;
-    background-image: url("../photos_freelance/JOYEUX\ NOEL!!!!.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     justify-content: center;
     align-items: center;
+}
+
+.videos { 
+    background-image: url("../photos_freelance/JOYEUX\ NOEL!!!!.jpg");
 }
 
 .videos:hover, .logos:hover, .art:hover , .soundtracks:hover, .montages:hover, .website:hover, .games:hover {
@@ -77,55 +126,22 @@ a {
 .text {
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
+    font-size: clamp(16px, 4vw, 30px);
     font-weight: 700;
     text-decoration: none;
     color: black;
 }
 
 .art {
-    display: flex;
-    width: 200px;
-    height: 200px;
-    background-color: palevioletred;
-    padding: 5px;
-    cursor: pointer;
-    justify-content: center;
-    align-items: center;
     background-image: url("../photos_freelance/NewPFP1.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .soundtracks {
-    display: flex;
-    width: 200px;
-    height: 200px;
-    background-color: palevioletred;
-    padding: 5px;
-    cursor: pointer;
-    justify-content: center;
-    align-items: center;
     background-image: url("../photos_freelance/black-sound-waves-equalizer-isolated-600nw-2181742441.webp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .montages {
-    display: flex;
-    width: 200px;
-    height: 200px;
-    background-color: palevioletred;
-    padding: 5px;
-    cursor: pointer;
-    justify-content: center;
-    align-items: center;
     background-image: url("../photos_freelance/3D_screenshot_1.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .montages .text, .soundtracks .text {
@@ -133,33 +149,9 @@ a {
 }
 
 .website {
-    display: flex;
-    width: 200px;
-    height: 200px;
-    background-color: palevioletred;
-    color: black;
-    padding: 5px;
-    cursor: pointer;
-    justify-content: center;
-    align-items: center;
     background-image: url("../photos_freelance/website_screenshot_1.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .games {
-    display: flex;
-    width: 200px;
-    height: 200px;
-    background-color: palevioletred;
-    color: red;
-    padding: 5px;
-    cursor: pointer;
-    justify-content: center;
-    align-items: center;
     background-image: url("../photos_freelance/image.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
