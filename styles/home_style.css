@@ -1,5 +1,5 @@
 body {
-    background-color: orangered;
+    background-color: orange;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -53,12 +53,9 @@ a {
 
 .foreground {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem;
-    place-items: center;
-    padding: 12rem 2rem 2rem;
     max-width: 100%;
     box-sizing: border-box;
+    padding: 19rem 2rem 2rem;
 }
 
 @media (min-width: 435px) and (max-width: 558px) {
@@ -100,6 +97,19 @@ a {
     }
 }
 
+.first_home_line {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.5fr;
+    gap: 2rem;
+    margin-bottom: 2em;
+}
+
+.second_home_line {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 1.5rem;
+}
+
 .videos, .soundtracks, .art, .website, .games, .montages {
     display: flex;
     width:100%;
@@ -114,10 +124,6 @@ a {
     align-items: center;
 }
 
-.videos { 
-    background-image: url("../photos_freelance/JOYEUX\ NOEL!!!!.jpg");
-}
-
 .videos:hover, .logos:hover, .art:hover , .soundtracks:hover, .montages:hover, .website:hover, .games:hover {
     outline: 3px solid black;
     outline-offset: 6px;
@@ -129,19 +135,27 @@ a {
     font-size: clamp(16px, 4vw, 30px);
     font-weight: 700;
     text-decoration: none;
-    color: black;
+}
+
+.videos { 
+    background-image: url("../photos_freelance/JOYEUX\ NOEL!!!!.jpg");
+    color: white;
 }
 
 .art {
     background-image: url("../photos_freelance/NewPFP1.png");
+    color: orange;
+    border: 3px solid black;
 }
 
 .soundtracks {
     background-image: url("../photos_freelance/black-sound-waves-equalizer-isolated-600nw-2181742441.webp");
+    color: black;
 }
 
 .montages {
     background-image: url("../photos_freelance/3D_screenshot_1.png");
+    color: black;
 }
 
 .montages .text, .soundtracks .text {
@@ -154,4 +168,17 @@ a {
 
 .games {
     background-image: url("../photos_freelance/image.png");
+}
+
+.triangle {
+    display: flex;
+    margin: 9em 50%;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 80px solid black;
 }
